@@ -1,0 +1,306 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin-top: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(235, 18%, 26%);
+  font-family: Roboto, sans-serif;
+  overflow: hidden;
+}
+
+.contain {
+  width: 100vw;
+  height: 100vh;
+}
+
+.card {
+  background-color: hsl(0, 0%, 100%);
+  width: 550px;
+  height: 385px;
+}
+
+.heading-1 h3 {
+  color: hsl(234, 29%, 20%);
+  font-weight: 700;
+  font-size: 35px;
+  letter-spacing: 1px;
+}
+
+.heading-1 p {
+  font-size: 10.5px;
+  color: hsl(235, 18%, 26%);
+  font-weight: 500;
+  margin-top: 5px;
+}
+
+.radius {
+  border-radius: 20px;
+}
+
+.margin {
+  margin-left: 30px;
+  margin-top: 40px;
+}
+
+.margin-img {
+  margin: 10px 8px 10px 28px;
+  width: 320px;
+  height: 360px;
+  border-radius: 0px;
+}
+.margin-img img {
+  max-width: fit-content;
+  height: 360px;
+  border-radius: 0%;
+  border: none;
+}
+
+.margin1 {
+  margin-top: 15px;
+}
+
+.margin-list {
+  margin-top: 9.5px;
+}
+
+.check-list {
+  color: hsl(234, 29%, 20%);
+}
+.check-list span {
+  margin-left: 10px;
+  font-weight: 400;
+}
+.check-list img {
+  width: 15px;
+}
+
+.Email-container {
+  margin-top: 20px;
+}
+.Email-container .error-p p {
+  color: hsl(4, 100%, 67%);
+  font-size: 8.5px;
+  font-weight: 600;
+}
+.Email-container .Email-input {
+  margin-top: 5px;
+}
+.Email-container .Email-input .input-email {
+  padding: 15px 10px;
+  font-size: 12px;
+  width: 245px;
+  height: 30px;
+  border: 1px solid hsl(231, 7%, 60%);
+}
+.Email-container .Email-input .input-email:focus {
+  outline: none;
+}
+.Email-container .Email-input .input-e {
+  padding: 15px 10px;
+  font-size: 12px;
+  width: 245px;
+  border-radius: 5px;
+  height: 30px;
+  background-color: hsla(4, 100%, 67%, 0.113);
+  color: hsl(4, 100%, 67%);
+  border: 1px solid hsl(4, 100%, 67%);
+}
+.Email-container .Email-input .input-e:focus {
+  border: 1px solid hsl(4, 100%, 67%);
+  outline: none;
+  color: hsl(4, 100%, 67%);
+}
+
+.sub-button {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sub-button button {
+  background-color: hsl(234, 29%, 20%);
+  font-size: 11px;
+  align-items: center;
+  text-align: center;
+  width: 240px;
+  border-radius: 5px;
+  color: hsl(0, 0%, 100%);
+  font-weight: 900px;
+  padding: 10px 35px;
+}
+.sub-button button:hover, .sub-button button :active {
+  background: linear-gradient(to right, rgba(221, 37, 123, 0.887), hsl(4, 100%, 67%));
+}
+
+.success {
+  margin-top: 25px;
+}
+
+.thxCard {
+  margin-top: 22px;
+}
+.thxCard h1 {
+  font-size: 34px;
+  color: hsl(234, 29%, 20%);
+  font-weight: 700;
+  line-height: 35px;
+}
+.thxCard p {
+  margin-top: 10px;
+  font-size: 10.5px;
+  color: hsl(234, 29%, 20%);
+  font-weight: 400;
+}
+
+.content {
+  width: 240px;
+}
+
+.thank-card {
+  border-radius: 20px;
+  width: 320px;
+  height: 300px;
+}
+
+.m-img {
+  display: none;
+}
+
+.dis-button {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dis-button button {
+  background-color: hsl(234, 29%, 20%);
+  font-size: 11px;
+  width: 80vw;
+  border-radius: 5px;
+  color: hsl(0, 0%, 100%);
+  font-weight: 900px;
+  padding: 10px 35px;
+}
+.dis-button button:hover, .dis-button button :active {
+  background: linear-gradient(to right, rgba(221, 37, 123, 0.887), hsl(4, 100%, 67%));
+}
+
+.thank-content {
+  width: 240px;
+}
+
+.loader {
+  position: fixed; /* Position the loader relative to the viewport */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the loader */
+  width: fit-content;
+  font-weight: bold;
+  font-family: sans-serif;
+  color: hsl(0, 0%, 100%);
+  font-size: 30px;
+  padding-bottom: 8px;
+  background: linear-gradient(currentColor 0 0) 0 100%/0% 3px no-repeat;
+  animation: l2 2s linear infinite;
+  z-index: 9999; /* Ensure loader is on top of other elements */
+}
+
+.loader:before {
+  content: "Loading...";
+}
+
+@keyframes l2 {
+  to {
+    background-size: 100% 3px;
+  }
+}
+@media only screen and (max-width: 565px) {
+  body {
+    overflow-y: scroll;
+  }
+  .thank-card {
+    width: 100vw;
+    border-radius: 0px;
+    align-items: center;
+    height: 100vh;
+  }
+  .dis-button {
+    position: fixed;
+    bottom: 0;
+    left: 10px;
+    right: 10px;
+    margin-bottom: 22px;
+  }
+  .thxCard {
+    margin-top: 25px;
+  }
+  .thxCard p {
+    font-size: 1em;
+  }
+  .thxCard h1 {
+    font-size: 2em;
+  }
+  .success {
+    margin-top: 0px;
+  }
+  .thank-content {
+    width: 80vw;
+  }
+}
+@media only screen and (max-width: 565px) {
+  .none {
+    display: none;
+  }
+  .card-container {
+    background-color: hsl(0, 0%, 100%);
+  }
+  .card {
+    width: 100%;
+    flex-direction: column;
+    height: 100vh;
+    border-radius: 0px;
+    justify-content: center;
+    margin-bottom: 250px;
+  }
+  .content {
+    width: full;
+  }
+  .margin1 {
+    margin-top: 15px;
+  }
+  .margin-list {
+    margin-top: 10px;
+  }
+  .check-list {
+    color: hsl(234, 29%, 20%);
+  }
+  .check-list span {
+    margin-left: 10px;
+    font-weight: 400;
+  }
+  .check-list img {
+    width: 15px;
+  }
+  .margin {
+    margin-left: 15px;
+    margin-top: 20px;
+  }
+  .m-img {
+    display: flex;
+  }
+  .m-img img {
+    width: 100%;
+  }
+  .sub-button button {
+    width: 90vw;
+  }
+  .Email-container .Email-input .input-email {
+    width: 90vw;
+  }
+  .Email-container .Email-input .input-e {
+    width: 90vw;
+  }
+}/*# sourceMappingURL=style.css.map */

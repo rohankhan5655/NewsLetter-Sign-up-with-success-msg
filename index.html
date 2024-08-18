@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+</head>
+<body >
+<main>
+   <div class="loader"></div> 
+  <div class="justify-center items-center card-container flex w-[100vw] h-[100vh] flex-col"  >
+    <div class="card  flex radius animate__animated animate__slideInDown" name="Card" id="Card">
+      <div class="m-img">
+        <img src="./assets/images/illustration-sign-up-mobile.svg" alt="illustration-sign-up-mobile">
+      </div>
+      <div class="content flex flex-col heading-1 flex-wrap margin">
+ <h3>Stay updated!</h3>
+ <p>Join 60,000+ product managers receiving monthly updates on;</p>
+   <div class="check-list margin1 flex items-center text-[10.5px]">
+     <img src="./assets/images/icon-list.svg" alt="icon-list">
+     <span>Product discovery and building what matters</span>
+    </div>
+    <div class="check-list flex margin-list items-center text-[10.5px]">
+      <img src="./assets/images/icon-list.svg" alt="icon-list">
+      <span>Measuring to ensure updates are a success</span>
+    </div>
+    <div class="check-list flex margin-list items-center text-[10.5px]">
+      <img src="./assets/images/icon-list.svg" alt="icon-list">
+      <span>And much more!</span>
+    </div>
+    <div class="Email-container">
+      <div class="flex justify-between text[8.5px]">
+        <p>Email address</p>
+        <div class="error-p hidden">
+          <p >Valid Email requeired</p>
+        </div>
+      </div>
+      <div class="Email-input">
+        <input type="email" class="input-email" name="Email" id="inPut" placeholder="email@company.com" for ="Email" onchange="onChange()" autocomplete="off">
+        <div class="sub-button">
+          <button id="subButton">Subscribe to monthly newsletter</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="image-container none  margin-img">
+      <img src="./assets/images/illustration-sign-up-desktop.svg" alt="illustration-sign-up-desktop" >
+     </div>
+    </div>
+    <!--Now thank Message -->
+    <div class="thank-card hidden flex justify-center bg-white  animate__animated animate__bounceInLeft" id="thank-card">
+   <div class="thank-content ">
+     <img src="./assets/images/icon-success.svg" alt="icon-success" class="w-[42px] success">
+     <div class="thxCard">
+      <h1>Thanks for<br>subscribing!</h1>
+      <p id="submittedEmail"></p>
+      <div class="dis-button dis-button">
+        <button id="disButton">Dismiss message</button>
+      </div>
+     </div>
+    </div>
+  </div>
+  </div>
+</main>
+  <script src="./index.js"></script>
+</body>
+</html>
